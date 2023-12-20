@@ -1,3 +1,6 @@
+![image](image/Memory1.jpg)
+![image](image/Memory2.jpg)
+
 # GrAPiC 
 
 ## Starting
