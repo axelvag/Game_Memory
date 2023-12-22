@@ -50,6 +50,15 @@ the image whose name was created previously and marks the index used in the
 table t_index_image.
 ```
 
+# Starting
+
+- Install CodeBlocks (information at the bottom of this page)
+
+- Clone this repo
+```bash
+$ git clone https://github.com/axelvag/Game_Memory
+```
+
 # GrAPiC 
 
 ## Starting
