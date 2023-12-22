@@ -1,5 +1,54 @@
+# Game Memory
+
+## Idea
+
+Un jeu de memory avec afichage graphique (GraPic) dans l'univers des mangas !
+
 ![image](image/Memory1.jpg)
 ![image](image/Memory2.jpg)
+
+Il y a 18 images choisis aleatoirement, elles sont stockees dans /data/memory donc vous pouvez ainsi les remplacer par celles de votre choix
+
+## Subject
+
+Pour faire ce projet en suivant les consignes d'un TP, j'ai d'abord creer un memory simple en texte/ascii (l'affichage est sur le terminal), le repo de ce projet est dans mon Cpp_perso/Memory.
+Pour ensuite utiliser la librairie GraPic pour faire une version graphique.
+
+Voici le sujet:
+```
+Version texte
+
+1. Écrire en C/C++ une procédure demandant au joueur de choisir deux cases et
+d’afficher le contenu de ces deux cases en les restituant dans la grille complète.
+
+2. Écrire en C/C++ une fonction de vérification du choix de l’utilisateur. Si les deux
+cases choisies sont identiques la fonction renverra 0 sinon elle renverra 1.
+
+3. Simuler le jeu à deux joueurs jusqu’à ce que toutes les paires aient été trouvées.
+
+Version GrAPiC
+
+Afin de faciliter le codage de l’application en TP sous GrAPiC, nous allons écrire ici quelques
+sous-programmes.
+Dans la version graphique, vous allez utiliser des images plutôt que les mots de la version
+texte. Les fichiers d’images seront copiés dans le dossier data de Grapic et seront nommés de
+la manière suivante : Image_Memory_XX.jpg avec XX un entier compris entre 01 et 18.
+Afin de pouvoir positionner aléatoirement les images dans la grille de jeu, il est impératif de
+pouvoir générer automatiquement le nom du fichier qui sera associé à l’image contenue dans
+la grille. Pour éviter les doublons (de paires de cartes) il faudra veiller à ce que l’indice choisi
+de manière aléatoire n’ait pas déjà été sélectionné. On utilisera pour cela un tableau
+t_indice_image tableau de MAX_IMAGES cases de type entier.
+
+1. Ecrire en C/C++ une fonction qui à partir du tableau t_indice_image choisit
+aléatoirement et retourne un indice non utilisé dans ce tableau.
+
+2. Ecrire en C/C++ une procédure qui à partir d’un entier passé en paramètre génère le
+nom du fichier image associé.
+
+3. Ecrire en C/C++ une procédure qui positionne dans la grille du mémory deux fois
+l’image dont le nom a été créé précédemment et marque à 1 l’indice utilisé dans le
+tableau t_indice_image.
+```
 
 # GrAPiC 
 
