@@ -2,52 +2,52 @@
 
 ## Idea
 
-Un jeu de memory avec afichage graphique (GraPic) dans l'univers des mangas !
+A memory game with graphic display (GraPic) in the world of manga!
 
 ![image](image/Memory1.jpg)
 ![image](image/Memory2.jpg)
 
-Il y a 18 images choisis aleatoirement, elles sont stockees dans /data/memory donc vous pouvez ainsi les remplacer par celles de votre choix
+There are 18 images chosen randomly, they are stored in /data/memory so you can replace them with those of your choice.
 
 ## Subject
 
-Pour faire ce projet en suivant les consignes d'un TP, j'ai d'abord creer un memory simple en texte/ascii (l'affichage est sur le terminal), le repo de ce projet est dans mon Cpp_perso/Memory.
-Pour ensuite utiliser la librairie GraPic pour faire une version graphique.
+To do this project following the instructions of a practical work, I first created a simple memory in text/ascii (the display is on the terminal), the repo of this project is in my Cpp_perso/Memory.
+To then use the GraPic library to make a graphical version.
 
-Voici le sujet:
+Here is the subject:
 ```
-Version texte
+Text version
 
-1. Écrire en C/C++ une procédure demandant au joueur de choisir deux cases et
-d’afficher le contenu de ces deux cases en les restituant dans la grille complète.
+1. Write in C/C++ a procedure asking the player to choose two boxes and
+to display the contents of these two boxes by restoring them in the complete grid.
 
-2. Écrire en C/C++ une fonction de vérification du choix de l’utilisateur. Si les deux
-cases choisies sont identiques la fonction renverra 0 sinon elle renverra 1.
+2. Write a user choice verification function in C/C++. If both
+chosen boxes are identical the function will return 0 otherwise it will return 1.
 
-3. Simuler le jeu à deux joueurs jusqu’à ce que toutes les paires aient été trouvées.
+3. Simulate the two-player game until all pairs have been found.
 
-Version GrAPiC
+GrAPiC version
 
-Afin de faciliter le codage de l’application en TP sous GrAPiC, nous allons écrire ici quelques
-sous-programmes.
-Dans la version graphique, vous allez utiliser des images plutôt que les mots de la version
-texte. Les fichiers d’images seront copiés dans le dossier data de Grapic et seront nommés de
-la manière suivante : Image_Memory_XX.jpg avec XX un entier compris entre 01 et 18.
-Afin de pouvoir positionner aléatoirement les images dans la grille de jeu, il est impératif de
-pouvoir générer automatiquement le nom du fichier qui sera associé à l’image contenue dans
-la grille. Pour éviter les doublons (de paires de cartes) il faudra veiller à ce que l’indice choisi
-de manière aléatoire n’ait pas déjà été sélectionné. On utilisera pour cela un tableau
-t_indice_image tableau de MAX_IMAGES cases de type entier.
+In order to facilitate the coding of the application in practical work under GrAPiC, we will write here some
+subroutines.
+In the graphical version, you will use images rather than words in the version
+text. The image files will be copied to the Grapic data folder and will be named accordingly.
+the following way: Image_Memory_XX.jpg with XX an integer between 01 and 18.
+In order to be able to randomly position the images in the game grid, it is imperative to
+be able to automatically generate the name of the file which will be associated with the image contained in
+Grid. To avoid duplicates (of pairs of cards) it will be necessary to ensure that the chosen index
+randomly has not already been selected. For this we will use a table
+t_index_image array of MAX_IMAGES boxes of integer type.
 
-1. Ecrire en C/C++ une fonction qui à partir du tableau t_indice_image choisit
-aléatoirement et retourne un indice non utilisé dans ce tableau.
+1. Write in C/C++ a function which from the table t_index_image chooses
+randomly and returns an index not used in this array.
 
-2. Ecrire en C/C++ une procédure qui à partir d’un entier passé en paramètre génère le
-nom du fichier image associé.
+2. Write in C/C++ a procedure which, from an integer passed as a parameter, generates the
+name of the associated image file.
 
-3. Ecrire en C/C++ une procédure qui positionne dans la grille du mémory deux fois
-l’image dont le nom a été créé précédemment et marque à 1 l’indice utilisé dans le
-tableau t_indice_image.
+3. Write a procedure in C/C++ that positions in the memory grid twice
+the image whose name was created previously and marks the index used in the
+table t_index_image.
 ```
 
 # GrAPiC 
