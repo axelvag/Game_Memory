@@ -11,7 +11,7 @@ There are 18 images chosen randomly, they are stored in /data/memory so you can 
 
 ## Subject
 
-To do this project following the instructions of a practical work, I first created a simple memory in text/ascii (the display is on the terminal), the repo of this project is in my Cpp_perso/Memory.
+To do this project following the instructions of a practical work, I first created a simple memory in text/ascii (the display is on the terminal), the repo of this project is in my [Game_mini_memory.cpp](https://github.com/axelvag/Game_mini_memory)
 To then use the GraPic library to make a graphical version.
 
 Here is the subject:
